@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="overlay">
+<form onsubmit="validate()">
+    <div class="title">
+    <h1>For New Employees</h1>
+    <p>Please, fill this form. Field marked(<span class="red-star">*</span>) are compulsory.</p>
+</div>
+    <fieldset>
+        <legend>
+            <h3>Contact Information</h3></legend>
+        <label>Name<span class="red-star">*</span>
+            <input type="text" name="name" required="" id="name" placeholder="Enter your name">
+        </label>
+
+        <label>Telephone<span class="red-star">*</span>
+            <input type="text" name="telephone" id="phone-number" placeholder="Enter a valid phone number">
+        </label>
+
+        <label>Email<span class="red-star">*</span>
+            <input type="email" name="email" required="" id="email" placeholder="Your E-mail">
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h3>Personal Information</h3></legend>
+        <label>Age<span class="red-star">*</span>
+            <input type="number" name="age" id="age" min="10" max="100" step="2">
+        </label>
+        <label>Gender
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="both">both</option>
+            </select>
+        </label>
+        <label>Add other information
+            <textarea name="info" rows="4" cols="50" id="otherInfo" placeholder="Additional information"></textarea>
+        </label>
+    </fieldset>
+
+    <fieldset class="last">
+        <legend class="container">
+            <h3>Choose Your Favorite Animals</h3></legend>
+        <label>Zebra
+            <input type="checkbox" name="zebra" class="last" value="zebra">
+        </label>
+        <label>Cat
+            <input type="checkbox" name="cat" class="last" value="cat">
+        </label>
+        <label>Anaconda
+            <input type="checkbox" name="anaconda" class="last" value="anaconda">
+        </label>
+        <label>Man
+            <input type="checkbox" name="man" class="last" value="man">
+        </label><br>
+        <label>Elephant
+            <input type="checkbox" name="elephant" class="last" value="elephant">
+        </label>
+        <label>Gorilla
+            <input type="checkbox" name="gorilla" class="last" value="gorilla">
+        </label>
+        <label>Crocodile
+            <input type="checkbox" name="crocodile" class="last" value="crocodile">
+        </label>
+        <label>Dog
+            <input type="checkbox" name="dog" class="last" value="dog">
+        </label>
+    </fieldset>
+
+    <button type="submit" id="btn">Send Info</button>
+</form>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

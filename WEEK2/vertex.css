@@ -1,0 +1,356 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: RooneySans-Regular, Lucida Grande,Lucida Sans Unicode,Trebuchet MS,sans-serif;
+}
+body {
+    font-family: RooneySans-Regular,Lucida Grande,Lucida Sans Unicode,Trebuchet MS,sans-serif;
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4 {
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin: 1.2rem 0 1.2rem 0;
+}
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+    background: #130c0c;
+    left: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.nav-header > a{
+    font-size: 2rem;
+}
+.nav-header > a > img{
+    width: 150px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.links a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 2rem;
+    transition: var(--transition);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+}
+.links a:hover {
+    background: #ea7341;
+    padding-left: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.show-links {
+    height: 10rem;
+}
+
+.menu > li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+    list-style-type: none;
+}
+
+ li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a:hover {
+    background: #ea7341;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #ea7341;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #000;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+    color: white;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+}
+
+.sticky {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+}
+
+article{
+    width: 60%;
+    padding: 2rem;
+}
+
+.art-center > section > h3{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+h2{
+    padding: 1.5rem;
+}
+
+.list{
+    list-style-type: square;
+}
+
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blockquote p {
+    font-size: 1.5rem;
+    /*font-weight: 700px;*/
+    text-align: center;
+    color: white;
+    padding-left: 2rem;
+}
+
+.blockquote:before {
+    position: absolute;
+    font-family: 'FontAwesome', serif;
+    top: 0;
+    content:"\f10d";
+    font-size: 100px;
+    color: white;
+    left: 10px;
+}
+.line {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: grey;
+    text-underline-position: under;
+}
+
+.li{
+    transition: all 200ms ease-in;}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header {
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .links {
+        height: auto;
+        display: flex;
+    }
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+    .social-icons {
+        display: flex;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: var(--clr-primary-5);
+        transition: var(--transition);
+    }
+    .social-icons a:hover {
+        color: var(--clr-primary-7);
+    }
+}
+
+.subscribe{
+    margin: 4rem 0 0 0;
+    /*display: inline-block;*/
+}
+
+footer{
+    height: 100%;
+    background: #08121c;
+    position: relative;
+    /*box-sizing: border-box;*/
+    width: 100%;
+    color: var(--clr-grey-7);
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+.social{
+    margin-top: 2rem;
+}
+.social > a{
+    padding: 1rem;
+}
+
+
+.footer .rights{
+    justify-content: center;
+}
+
+.footer .rights h4 a{
+    color: white;
+    justify-content: center;
+}
+
+.droits{
+    justify-content: center;
+    color: #a4bfd3;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}

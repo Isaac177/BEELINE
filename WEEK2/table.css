@@ -1,0 +1,59 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+.center, .second-t{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+table, th, tr, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.day{
+    white-space:nowrap;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    writing-mode: lr-tb;
+    font-weight: bold;
+}
+.first > td:nth-child(n+3){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.first, .second, .third {
+    background: lightgreen;
+}
+
+table > :not(.day){
+    background: #f3f391;
+    font-size: 14px;
+}
+
+.second > td:nth-child(n+3){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.third{
+    font-size: 12px;
+}
+
+.title{
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.second-t{
+    width: 90%;
+    height: 300px;
+    margin-bottom: 4rem;
+}
+.second-t, .first-r, .second-r, .third-r, .fourth-r, .fifth-r, .sixth-r, .td, th{
+    border: 3px  solid white;
+}

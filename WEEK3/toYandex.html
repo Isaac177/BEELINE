@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>toYandex</title>
+  <style>
+    body{
+      font-family: 'Open Sans', serif ;
+    }
+    input {
+      width: 300px;
+      box-sizing: border-box;
+      border: 2px solid #ecad26;
+      border-radius: 20px;
+      font-size: 16px;
+      background-color: #ffffff;
+      padding: 20px 20px 20px 40px;
+      -webkit-transition: width 0.5s ease-out;
+      transition: width 0.5s ease-out;
+      margin-top: 4rem;
+    }
+
+    input:focus {
+      width: 800px;
+    }
+
+    form{
+      text-align: center;
+    }
+    label{
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem;
+    }
+    span{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<h1 style="text-align: center;">Link to Yandex</h1>
+<br><br>
+
+<form action="https://www.yandex.kz/search/">
+  <label for="text"><span>Я</span>ндекс</label>
+  <input type="text" placeholder="Yandex Search" id="text" name="text"><br><br>
+  <button type="submit" style="visibility: hidden">Search</button>
+</form>
+
+</body>
+</html>

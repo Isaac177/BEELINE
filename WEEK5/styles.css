@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+p {
+    width: 600px;
+    margin: 0 auto 2rem;
+    flex: 1 0 1400px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(228, 222, 222);
+    padding: 2rem;
+    width: 300px;
+    border-radius: 5px;
+    margin: 1rem;
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+}
+
+span {
+    display: block;
+}
+
+button {
+    background-color: rgb(117, 8, 117);
+    color: white;
+    padding: 0.8rem;
+    margin-top: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    background-color: rgb(205, 170, 245);
+    cursor: pointer;
+}
+
+.box:hover>button {
+    animation: glowing 1300ms infinite;
+    cursor: pointer;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(117, 8, 117);
+        box-shadow: 0 0 5px rgb(117, 8, 117);
+    }
+    50% {
+        background-color: rgb(117, 8, 117);
+        box-shadow: 0 0 20px rgb(117, 8, 117);
+    }
+    100% {
+        background-color: rgb(117, 8, 117);
+        box-shadow: 0 0 5px rgb(117, 8, 117);
+    }
+}
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.6s;
+}
+
+.delay-2 {
+    animation-delay: 0.7s;
+}
+
+.delay-3 {
+    animation-delay: 0.8s;
+}
+
+@media only screen and ( min-width: 200px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    p {
+        width: 80%;
+        font-size: smaller;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+}

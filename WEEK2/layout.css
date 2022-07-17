@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(106,147, 212, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 15px;
+    background-color: rgba(255, 227, 115, 0.3);
+}
+
+footer {
+    background-color: #052D6E;
+    padding: 15px;
+    color: #fff;
+}
+
+article {
+    width: 70%;
+    padding: 15px;
+    background-color: rgba(129, 112, 216, 0.4);
+}
+
+aside {
+    width: 30%;
+    padding: 15px;
+    background-color: rgba(255, 186, 64, 0.5);
+}
