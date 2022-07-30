@@ -143,4 +143,4 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-observer.observe(document.querySelector('.reveal'));;
+observer.observe(document.querySelector('.reveal'));
