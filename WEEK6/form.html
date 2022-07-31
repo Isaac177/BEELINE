@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Bootstrap Form</title>
+</head>
+<body class="row" style="background: #f3f2ef">
+    <header class="header d-flex p-2 justify-content-center flex-row bg-white sticky-top">
+        <div class="linkedIn mx-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#0A66C2" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+        </div>
+        <div class="search mt-2">
+            <form action="" method="get">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control bg-light" placeholder="Search" style="width:300px">
+            </form>
+        </div>
+        <div class="menu d-flex justify-content-end">
+            <ul class="d-flex flex-row justify-content-end list-unstyled p-auto">
+                <li class="ms-5">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                                </svg>
+                            </span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Home</a></span>
+                </li>
+                <li class="mx-2">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                                </svg></span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Network</a></span>
+                </li>
+                <li class="mx-2">
+                            <span class="d-block text-center p-auto text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                            </svg></span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Jobs</a></span>
+                </li>
+                <li class="mx-2">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-right-dots-fill" viewBox="0 0 16 16">
+                                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg></span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Messaging</a></span>
+                </li>
+                <li class="mx-2">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                </svg></span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Notifications</a></span>
+                </li>
+
+                <li class="dropdown mx-2 position-relative d-inline-block">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg></span>
+                    <span class="d-block"><a class="showBtn text-muted text-decoration-none dropdown-toggle"  onclick="showDropdown" href="">You</a></span>
+                </li>
+                <div class="vr"></div>
+                <li class="mx-2">
+                            <span class="d-block text-center p-auto text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                </svg></span>
+                    <span class="d-block"><a class="text-muted text-decoration-none" href="">Products</a></span>
+                </li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <div class="container" style="background: #f3f2ef">
+        <div class="row">
+            <form class="form col-md-8 bg-white mt-4 pb-4 mb-4" style="border-radius: 10px; margin: 0 auto;">
+                <div class="text-center p-4">
+                    <h2>For New Employees</h2>
+                </div>
+                        <h5 class="p-2">Contact Information</h5>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <label for="inputTelephone" class="form-label">telephone</label>
+                            <input type="tel" class="form-control" id="inputTelephone" placeholder="Telephone">
+                        </div>
+                    </div>
+
+                        <h5 class="mt-4 p-2">Personal Information</h5>
+
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                    <div class="col-12 mt-2">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                <div class="row g-3 mt-2">
+                    <div class="col-sm-7">
+                        <label class="form-label">Country</label>
+                        <select id="inputState" class="form-select">
+                            <option value="">Select Country</option>
+                            <option value="Kz">Kazakhstan</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <label class="form-label">City</label>
+                        <select id="inputCity" class="form-select">
+                            <option value="">Select City</option>
+                            <option value="Akkol">Akkol</option>
+                            <option value="Akkol’">Akkol’</option>
+                            <option value="Aksu">Aksu</option>
+                            <option value="Astrakhan">Astrakhan</option>
+                            <option value="Atbasar">Atbasar</option>
+                            <option value="Balkashino">Balkashino</option>
+                            <option value="Bestobe">Bestobe</option>
+                            <option value="Derzhavīnsk">Derzhavīnsk</option>
+                            <option value="Egindiköl">Egindiköl</option>
+                            <option value="Esil">Esil</option>
+                            <option value="Kokshetau">Kokshetau</option>
+                            <option value="Krasnogorskiy">Krasnogorskiy</option>
+                            <option value="Makinsk">Makinsk</option>
+                            <option value="Shantobe">Shantobe</option>
+                            <option value="Shchuchinsk">Shchuchinsk</option>
+                            <option value="Shortandy">Shortandy</option>
+                            <option value="Stepnogorsk">Stepnogorsk</option>
+                            <option value="Stepnyak">Stepnyak</option>
+                            <option value="Yermentau">Yermentau</option>
+                            <option value="Zavodskoy">Zavodskoy</option>
+                            <option value="Zhaqsy">Zhaqsy</option>
+                            <option value="Zholymbet">Zholymbet</option>
+                            <option value="Aktobe">Aktobe</option>
+                            <option value="Batamshinskiy">Batamshinskiy</option>
+                            <option value="Bayganin">Bayganin</option>
+                            <option value="Embi">Embi</option>
+                            <option value="Kandyagash">Kandyagash</option>
+                            <option value="Khromtau">Khromtau</option>
+                            <option value="Martuk">Martuk</option>
+                            <option value="Shalqar">Shalqar</option>
+                            <option value="Shubarkuduk">Shubarkuduk</option>
+                            <option value="Shubarshi">Shubarshi</option>
+                            <option value="Temir">Temir</option>
+                            <option value="Yrghyz">Yrghyz</option>
+                            <option value="Almaty">Almaty</option>
+                            <option value="Bakanas">Bakanas</option>
+                            <option value="Balpyk Bī">Balpyk Bī</option>
+                            <option value="Burunday">Burunday</option>
+                            <option value="Chemolgan">Chemolgan</option>
+                            <option value="Druzhba">Druzhba</option>
+                            <option value="Esik">Esik</option>
+                            <option value="Kapshagay">Kapshagay</option>
+                            <option value="Kegen">Kegen</option>
+                            <option value="Lepsy">Lepsy</option>
+                            <option value="Matay">Matay</option>
+                            <option value="Otegen Batyra">Otegen Batyra</option>
+                            <option value="Pervomayka">Pervomayka</option>
+                            <option value="Sarkand">Sarkand</option>
+                            <option value="Saryozek">Saryozek</option>
+                            <option value="Taldykorgan">Taldykorgan</option>
+                            <option value="Talghar">Talghar</option>
+                            <option value="Tekeli">Tekeli</option>
+                            <option value="Turgen">Turgen</option>
+                            <option value="Ülken">Ülken</option>
+                            <option value="Ush-Tyube">Ush-Tyube</option>
+                            <option value="Zharkent">Zharkent</option>
+                            <option value="Akkol’">Akkol’</option>
+                            <option value="Atyrau">Atyrau</option>
+                            <option value="Balykshi">Balykshi</option>
+                            <option value="Bayshonas">Bayshonas</option>
+                            <option value="Dossor">Dossor</option>
+                            <option value="Inderbor">Inderbor</option>
+                            <option value="Makhambet">Makhambet</option>
+                            <option value="Maloye Ganyushkino">Maloye Ganyushkino</option>
+                            <option value="Maqat">Maqat</option>
+                            <option value="Miyaly">Miyaly</option>
+                            <option value="Qaraton">Qaraton</option>
+                            <option value="Qulsary">Qulsary</option>
+                            <option value="Shalkar">Shalkar</option>
+                            <option value="Baikonur">Baikonur</option>
+                            <option value="Altayskiy">Altayskiy</option>
+                            <option value="Aqtoghay">Aqtoghay</option>
+                            <option value="Asūbulaq">Asūbulaq</option>
+                            <option value="Auezov">Auezov</option>
+                            <option value="Ayagoz">Ayagoz</option>
+                            <option value="Belogorskīy">Belogorskīy</option>
+                            <option value="Belousovka">Belousovka</option>
+                            <option value="Borodulikha">Borodulikha</option>
+                            <option value="Georgīevka">Georgīevka</option>
+                            <option value="Glubokoye">Glubokoye</option>
+                            <option value="Kurchatov">Kurchatov</option>
+                            <option value="Kurchum">Kurchum</option>
+                            <option value="Maleyevsk">Maleyevsk</option>
+                            <option value="Ognevka">Ognevka</option>
+                            <option value="Priisk Boko">Priisk Boko</option>
+                            <option value="Qaraūyl">Qaraūyl</option>
+                            <option value="Ridder">Ridder</option>
+                            <option value="Semey">Semey</option>
+                            <option value="Shar">Shar</option>
+                            <option value="Shemonaīkha">Shemonaīkha</option>
+                            <option value="Suykbulak">Suykbulak</option>
+                            <option value="Tūghyl">Tūghyl</option>
+                            <option value="Urzhar">Urzhar</option>
+                            <option value="Ust-Kamenogorsk">Ust-Kamenogorsk</option>
+                            <option value="Ūst’-Talovka">Ūst’-Talovka</option>
+                            <option value="Zaysan">Zaysan</option>
+                            <option value="Zhalghyztobe">Zhalghyztobe</option>
+                            <option value="Zhanga Buqtyrma">Zhanga Buqtyrma</option>
+                            <option value="Zhezkent">Zhezkent</option>
+                            <option value="Zyryanovsk">Zyryanovsk</option>
+                            <option value="Aqbaqay">Aqbaqay</option>
+                            <option value="Chu">Chu</option>
+                            <option value="Georgiyevka">Georgiyevka</option>
+                            <option value="Granitogorsk">Granitogorsk</option>
+                            <option value="Karatau">Karatau</option>
+                            <option value="Khantaū">Khantaū</option>
+                            <option value="Lugovoy">Lugovoy</option>
+                            <option value="Lugovoye">Lugovoye</option>
+                            <option value="Merke">Merke</option>
+                            <option value="Moyynkum">Moyynkum</option>
+                            <option value="Mynaral">Mynaral</option>
+                            <option value="Oytal">Oytal</option>
+                            <option value="Sarykemer">Sarykemer</option>
+                            <option value="Shyghanaq">Shyghanaq</option>
+                            <option value="Taraz">Taraz</option>
+                            <option value="Zhangatas">Zhangatas</option>
+                            <option value="Abay">Abay</option>
+                            <option value="Abay Qalasy">Abay Qalasy</option>
+                            <option value="Aksu-Ayuly">Aksu-Ayuly</option>
+                            <option value="Aktas">Aktas</option>
+                            <option value="Aktau">Aktau</option>
+                            <option value="Aktogay">Aktogay</option>
+                            <option value="Aqadyr">Aqadyr</option>
+                            <option value="Aqshataū">Aqshataū</option>
+                            <option value="Aqtoghay Aūdany">Aqtoghay Aūdany</option>
+                            <option value="Atasū">Atasū</option>
+                            <option value="Balqash">Balqash</option>
+                            <option value="Bukhar-Zhyrau">Bukhar-Zhyrau</option>
+                            <option value="Dolinka">Dolinka</option>
+                            <option value="Karagandy">Karagandy</option>
+                            <option value="Kīevka">Kīevka</option>
+                            <option value="Koktal">Koktal</option>
+                            <option value="Kushoky">Kushoky</option>
+                            <option value="Kyzylzhar">Kyzylzhar</option>
+                            <option value="Moyynty">Moyynty</option>
+                            <option value="Novodolinskiy">Novodolinskiy</option>
+                            <option value="Osakarovka">Osakarovka</option>
+                            <option value="Prigorodnoye">Prigorodnoye</option>
+                            <option value="Priozersk">Priozersk</option>
+                            <option value="Qarazhal">Qarazhal</option>
+                            <option value="Qarqaraly">Qarqaraly</option>
+                            <option value="Saryshaghan">Saryshaghan</option>
+                            <option value="Sayaq">Sayaq</option>
+                            <option value="Shakhan">Shakhan</option>
+                            <option value="Shakhtinsk">Shakhtinsk</option>
+                            <option value="Shashūbay">Shashūbay</option>
+                            <option value="Shubarköl">Shubarköl</option>
+                            <option value="Soran">Soran</option>
+                            <option value="Temirtau">Temirtau</option>
+                            <option value="Tokarevka">Tokarevka</option>
+                            <option value="Verkhniye Kayrakty">Verkhniye Kayrakty</option>
+                            <option value="Zhambyl">Zhambyl</option>
+                            <option value="Zharyk">Zharyk</option>
+                            <option value="Zhezqazghan">Zhezqazghan</option>
+                            <option value="Arkalyk">Arkalyk</option>
+                            <option value="Ayat">Ayat</option>
+                            <option value="Borovskoy">Borovskoy</option>
+                            <option value="Dzhetygara">Dzhetygara</option>
+                            <option value="Fyodorovka">Fyodorovka</option>
+                            <option value="Karasu">Karasu</option>
+                            <option value="Komsomolets">Komsomolets</option>
+                            <option value="Kostanay">Kostanay</option>
+                            <option value="Lisakovsk">Lisakovsk</option>
+                            <option value="Ordzhonikidze">Ordzhonikidze</option>
+                            <option value="Qashar">Qashar</option>
+                            <option value="Qusmuryn">Qusmuryn</option>
+                            <option value="Rudnyy">Rudnyy</option>
+                            <option value="Tobol">Tobol</option>
+                            <option value="Torghay">Torghay</option>
+                            <option value="Troyebratskiy">Troyebratskiy</option>
+                            <option value="Aral">Aral</option>
+                            <option value="Ayteke Bi">Ayteke Bi</option>
+                            <option value="Belköl">Belköl</option>
+                            <option value="Dzhalagash">Dzhalagash</option>
+                            <option value="Kyzylorda">Kyzylorda</option>
+                            <option value="Qazaly">Qazaly</option>
+                            <option value="Sekseūil">Sekseūil</option>
+                            <option value="Shalqīya">Shalqīya</option>
+                            <option value="Shīeli">Shīeli</option>
+                            <option value="Tasböget">Tasböget</option>
+                            <option value="Terenozek">Terenozek</option>
+                            <option value="Yanykurgan">Yanykurgan</option>
+                            <option value="Zhosaly">Zhosaly</option>
+                            <option value="Aktau">Aktau</option>
+                            <option value="Baūtīno">Baūtīno</option>
+                            <option value="Beyneu">Beyneu</option>
+                            <option value="Fort-Shevchenko">Fort-Shevchenko</option>
+                            <option value="Munayshy">Munayshy</option>
+                            <option value="Ömirzaq">Ömirzaq</option>
+                            <option value="Sayötesh">Sayötesh</option>
+                            <option value="Shetpe">Shetpe</option>
+                            <option value="Taūshyq">Taūshyq</option>
+                            <option value="Yeraliyev">Yeraliyev</option>
+                            <option value="Zhanaozen">Zhanaozen</option>
+                            <option value="Zhetibay">Zhetibay</option>
+                            <option value="Birlestik">Birlestik</option>
+                            <option value="Bishkul">Bishkul</option>
+                            <option value="Bulayevo">Bulayevo</option>
+                            <option value="Būrabay">Būrabay</option>
+                            <option value="Kzyltu">Kzyltu</option>
+                            <option value="Novoishimskiy">Novoishimskiy</option>
+                            <option value="Petropavl">Petropavl</option>
+                            <option value="Sergeyevka">Sergeyevka</option>
+                            <option value="Smirnovo">Smirnovo</option>
+                            <option value="Taiynsha">Taiynsha</option>
+                            <option value="Talshik">Talshik</option>
+                            <option value="Timiryazevo">Timiryazevo</option>
+                            <option value="Volodarskoye">Volodarskoye</option>
+                            <option value="Yavlenka">Yavlenka</option>
+                            <option value="Nur-Sultan">Nur-Sultan</option>
+                            <option value="Aksu">Aksu</option>
+                            <option value="Bayanaul">Bayanaul</option>
+                            <option value="Belogor’ye">Belogor’ye</option>
+                            <option value="Ekibastuz">Ekibastuz</option>
+                            <option value="Irtyshsk">Irtyshsk</option>
+                            <option value="Kalkaman">Kalkaman</option>
+                            <option value="Leninskiy">Leninskiy</option>
+                            <option value="Mayqayyng">Mayqayyng</option>
+                            <option value="Pavlodar">Pavlodar</option>
+                            <option value="Qashyr">Qashyr</option>
+                            <option value="Zhelezinka">Zhelezinka</option>
+                            <option value="Arys">Arys</option>
+                            <option value="Ashchysay">Ashchysay</option>
+                            <option value="Asyqata">Asyqata</option>
+                            <option value="Atakent">Atakent</option>
+                            <option value="Bayzhansay">Bayzhansay</option>
+                            <option value="Belyye Vody">Belyye Vody</option>
+                            <option value="Chardara">Chardara</option>
+                            <option value="Chayan">Chayan</option>
+                            <option value="Chulakkurgan">Chulakkurgan</option>
+                            <option value="Kantagi">Kantagi</option>
+                            <option value="Kentau">Kentau</option>
+                            <option value="Kokterek">Kokterek</option>
+                            <option value="Lenger">Lenger</option>
+                            <option value="Leninskoye">Leninskoye</option>
+                            <option value="Maqtaaral Aūdany">Maqtaaral Aūdany</option>
+                            <option value="Myrzakent">Myrzakent</option>
+                            <option value="Qogham">Qogham</option>
+                            <option value="Saryaghash">Saryaghash</option>
+                            <option value="Saryaghash Aūdany">Saryaghash Aūdany</option>
+                            <option value="Sastobe">Sastobe</option>
+                            <option value="Sozaq Aūdany">Sozaq Aūdany</option>
+                            <option value="Temirlanovka">Temirlanovka</option>
+                            <option value="Turar Ryskulov">Turar Ryskulov</option>
+                            <option value="Turkestan">Turkestan</option>
+                            <option value="Tyul’kubas">Tyul’kubas</option>
+                            <option value="Zhabagly">Zhabagly</option>
+                            <option value="Aqsay">Aqsay</option>
+                            <option value="Burlin">Burlin</option>
+                            <option value="Chapaev">Chapaev</option>
+                            <option value="Chingirlau">Chingirlau</option>
+                            <option value="Dzhambeyty">Dzhambeyty</option>
+                            <option value="Fedorovka">Fedorovka</option>
+                            <option value="Kaztalovka">Kaztalovka</option>
+                            <option value="Krūgloozernoe">Krūgloozernoe</option>
+                            <option value="Oral">Oral</option>
+                            <option value="Peremetnoe">Peremetnoe</option>
+                            <option value="Saykhin">Saykhin</option>
+                            <option value="Tasqala">Tasqala</option>
+                            <option value="Zhänibek">Zhänibek</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <label class="form-label">Zip</label>
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                    </div>
+                </div>
+
+                <h5 class="mt-4 p-2">Preferences List</h5>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <label class="form-label"><h6>Work</h6></label>
+                            <select class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Software Engineer</option>
+                                <option>Machine Learning</option>
+                                <option>Robotic</option>
+                                <option>Artificial Intelligence</option>
+                                <option>Web-Dev</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mx-4">
+                        <legend class="col-form-label col-sm-2 pt-0"><h6>Languages</h6></legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" value="option1">
+                            <label class="form-check-label">
+                                Python
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                            <label class="form-check-label">
+                                C++
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mt-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                            <label class="form-check-label">
+                                JavaScript
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                            <label class="form-check-label">
+                                Java
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mt-4 p-2">About Me</h5>
+                <div class="row">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea" class="text-muted mx-2">About me…</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary mt-4 p-2" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
